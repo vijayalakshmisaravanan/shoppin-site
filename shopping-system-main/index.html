@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/image/apple-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/font.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <title>shop &#128722</title>
+  </head>
+  <body>
+    <!-- start header nav -->
+    <header>
+      <nav>
+        <div class="container">
+          <div class="navbar">
+            <div class="navbar__menu">
+              <a class="shop-name" href="">syzziw</a>
+              <ul class="menu__list">
+                <ul>
+                  <li class="menu__item"><a href="#">Home</a></li>
+                  <li class="menu__item"><a href="about.html">About</a></li>
+                  <li class="menu__item"><a href="shop.html">Shop</a></li>
+                  <li class="menu__item"><a href="contact.html">Contact</a></li>
+                </ul>
+                <li class="menu__last-item">
+                  <div class="search-box">
+                    <input type="text" placeholder="Search..." />
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <span class="shopping-cart-icon">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="quantity-cart"></span>
+                  </span>
+                
+
+                  <a href="todo.html" class="list-icon">
+                    <i class="fa fa-list"></i>
+                    <span class="quantity-cart"></span>
+                  </a>
+
+                </li>
+              
+              </ul>
+            </div>
+            <div class="hamberger-menu">
+              <span><i class="fa fa-bars"></i></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end header nav -->
+
+    <!-- start search modal -->
+    <div class="search-modal">
+      <div class="search-modal__item">
+        <div class="search-modal__close"><i class="fa fa-close"></i></div>
+        <div class="search-box">
+          <input class="search-input" type="text" placeholder="Search..." />
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+      <div class="search-modal-back-dray"></div>
+    </div>
+    <!-- end search modal -->
+
+    <!-- start shopping cart modal -->
+    <div class="modal-cart">
+      <div class="modal__item">
+        <span><i class="fa fa-close close-cart"></i></span>
+
+        <div class="empty-cart">
+          <p>Your Cart Is Empty</p>
+          <img src="./assets/image/cart-icon.png" alt="cart icon" />
+        </div>
+
+        <div class="modal-cart-inner"></div>
+        <div class="modal-btn">
+          <p></p>
+          <div>
+            <div>
+              <button class="btn btn-secondry clear-all">Clear All</button>
+              <a href="buy.html" class="modal-buy-link">
+                <button class="btn btn-primary buy-btn">buy</button>
+              </a>
+            </div>
+            <p class="error"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-cart-back-dray"></div>
+    <!-- end shopping cart modal -->
+
+
+    
+
+
+    <!-- start hero banner -->
+    <div class="hero-banner">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="assets/image/banner_img_01.jpg" alt="banner image" />
+            <div class="hero-banner__text">
+              <h2>SHOES</h2>
+              <h3>Unisex shoes.</h3>
+              <p>
+                The design of shoes has varied enormously through time and from culture to culture, 
+                with form originally being tied to function
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/image/banner_img_02.jpg" alt="banner image" />
+            <div class="hero-banner__text">
+              <h2>BODY-CREAM</h2>
+              <h3>Most fresh and comfy.</h3>
+              <p>
+                Though Curology has a special focus on clearing acne-prone skin, 
+                the service can help treat a range of skin concerns and conditions, 
+                including: cystic acne. dry skin.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/image/banner_img_03.jpg" alt="banner image" />
+            <div class="hero-banner__text">
+              <h2>COOL LIGHT.</h2>
+              <h3>cosy black and good quality</h3>
+              <p>
+                Most white or blue lighting is cool light, which has a color temperature of over 4000K.
+                 This color temperature is closer to the temperature of sunlight than with warm lighting
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <!-- end hero banner -->
+
+    <!-- start categories of the month-->
+    <div class="categories">
+      <div class="container">
+        <div class="categories-inner">
+          <div class="header-categories">
+            <h2>Categories of The Month</h2>
+            <p>
+               we have product that can define you based on the Accessoriesyou wear.
+              give you good look and make you even more comfortable.
+             
+            </p>
+          </div>
+          <div class="body-categories">
+            <div class="product-categories">
+              <img src="assets/image/category_img_01.jpg" alt="" />
+              <h2>Watches</h2>
+              <button class="btn btn-primary">Go Shop</button>
+            </div>
+
+            <div class="product-categories">
+              <img src="assets/image/category_img_02.jpg" alt="" />
+              <h2>Shoes</h2>
+              <button class="btn btn-primary">Go Shop</button>
+            </div>
+
+            <div class="product-categories">
+              <img src="assets/image/category_img_03.jpg" alt="" />
+              <h2>Accessories</h2>
+              <button class="btn btn-primary">Go Shop</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end categoris of the month-->
+
+    <!-- start featured product -->
+    <div class="featured">
+      <div class="container">
+        <div class="featured-inner">
+          <div class="header-featured">
+            <h2>Featured Product</h2>
+            <p>
+              we have best selling products such as poloriod Watches,and color changing shoes
+             and unisex-shirts
+            </p>
+          </div>
+          <div class="body-featured">
+            <div class="featured-product">
+              <img src="assets/image/feature_prod_01.jpg" alt="" />
+              <div class="details-featured">
+                <div>
+                  <span class="stars-box">
+                    <i class="fa fa-star active"></i>
+                    <i class="fa fa-star active"></i>
+                    <i class="fa fa-star active"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  <span class="price">$240.00</span>
+                </div>
+                <h2>Gym Weighy</h2>
+                <p>
+                   Gym waist for customes with comfortable sizes and products 
+                 for gym can also be found
+
+                </p>
+                <span class="review-featured">Reviews (24)</span>
+              </div>
+            </div>
+
+            <div class="featured-product">
+              <img src="assets/image/feature_prod_02.jpg" alt="" />
+              <div class="details-featured">
+                <div>
+                  <span class="stars-box">
+                    <i class="fa fa-star active"></i>
+                    <i class="fa fa-star active"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  <span class="price">$480.00</span>
+                </div>
+                <h2>Cloud Nike Shoes</h2>
+                <p>
+                  new series on nike, cool design and comfort to use 
+                </p>
+                <span class="review-featured">Reviews (55)</span>
+              </div>
+            </div>
+
+            <div class="featured-product">
+              <img src="assets/image/feature_prod_03.jpg" alt="" />
+              <div class="details-featured">
+                <div>
+                  <span class="stars-box">
+                    <i class="fa fa-star active"></i>
+                    <i class="fa fa-star active"></i>
+                    <i class="fa fa-star active"></i>
+                    <i class="fa fa-star active"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  <span class="price">$360.00</span>
+                </div>
+                <h2>Summer Addides Shoes</h2>
+                <p>
+                 Try this new summer shoes , that makes you look cool  .
+                </p>
+                <span class="review-featured">Reviews (74)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end featured product -->
+
+    <!-- start footer -->
+    <footer>
+      <div class="main-footer">
+        <div class="container block">
+          <div class="footer-link">
+            <div class="footer-contact">
+              <h2>Zay Shop</h2>
+              <a
+                href="https://www.google.com/maps/place/%D8%A8%D9%87%D8%B4%D9%87%D8%B1%D8%8C+%D8%A7%D8%B3%D8%AA%D8%A7%D9%86+%D9%85%D8%A7%D8%B2%D9%86%D8%AF%D8%B1%D8%A7%D9%86%D8%8C+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%E2%80%AD/@36.7111917,53.5744514,13z/data=!3m1!4b1!4m5!3m4!1s0x3f84c34aadd553d1:0x53ffb49016ada071!8m2!3d36.6987017!4d53.5422337"
+              >
+                <i class="fa fa-map-marker"></i>
+                <span>Behshahr, Mazandaran Province</span>
+              </a>
+              <a href="tel:09399146933">
+                <i class="fa fa-phone"></i>
+                <span>0939-914-6933</span>
+              </a>
+              <a href="mailto:ahmadkarimigorji@yahoo.com">
+                <i class="fa fa-envelope"></i>
+                <span>ahmadkarimigorji@yahoo.com</span>
+              </a>
+            </div>
+
+            <div class="footer-products">
+              <h2>Products</h2>
+              <a href="#">Luxury</a>
+              <a href="#">sport wear</a>
+              <a href="#">Men's Shoes</a>
+              <a href="#">Women's Shoes</a>
+              <a href="#">Popular Dress</a>
+              <a href="#">Gym Accessories</a>
+              <a href="#">Sport Shoes</a>
+            </div>
+
+            <div class="footer-further">
+              <h2>Further Info</h2>
+              <a href="#">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="#">Shop Locations</a>
+              <a href="#">FAQs</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+
+          <div class="footer-social">
+            <div class="footer-icon">
+              <a href=""
+                ><span><i class="fa fa-facebook"></i></span
+              ></a>
+              <a href=""
+                ><span><i class="fa fa-instagram"></i></span
+              ></a>
+              <a href=""
+                ><span><i class="fa fa-twitter"></i></span
+              ></a>
+              <a href=""
+                ><span><i class="fa fa-linkedin"></i></span
+              ></a>
+            </div>
+            <div class="footer-email">
+              <div>
+                <input type="email" placeholder="Email address" />
+                <span>Subscribe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script type="module" src="js/app.js"></script>
+  
+  
+  </body>
+</html>

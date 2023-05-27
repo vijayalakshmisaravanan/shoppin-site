@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shop &#128722</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Unicons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+  <!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.-->
+  <div>
+    <nav>
+      <div class="container">
+        <div class="navbar">
+          <div class="navbar__menu">
+            <a class="shop-name" href="">syzziw</a>
+            <ul class="menu__list">
+              <ul>
+                <li class="menu__item"><a href="index.html">Home</a></li>
+                <li class="menu__item"><a href="about.html">About</a></li>
+                <li class="menu__item"><a href="#">Shop</a></li>
+                <li class="menu__item"><a href="contact.html">Contact</a></li>
+              </ul>
+              <li class="menu__last-item">
+                <div class="search-box">
+                  <input type="text" placeholder="Search..." />
+                  <i class="fa fa-search"></i>
+                </div>
+                <span class="shopping-cart-icon">
+                  <i class="fa fa-shopping-cart"></i>
+                  <span class="quantity-cart"></span>
+                </span>
+                <span class="shopping-cart-icon">
+                  <i class="fa fa-list"></i>
+                  <span class="quantity-cart"></span>
+                </span>
+
+                <a href="todo.html" class="list-icon">
+                  <i class="fa fa-list"></i>
+                  <span class="quantity-cart"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="hamberger-menu">
+            <span><i class="fa fa-bars"></i></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- end header nav -->
+
+  <!-- start search modal -->
+  <div class="search-modal">
+    <div class="search-modal__item">
+      <div class="search-modal__close"><i class="fa fa-close"></i></div>
+      <div class="search-box">
+        <input class="search-input" type="text" placeholder="Search..." />
+        <i class="fa fa-search"></i>
+      </div>
+    </div>
+    <div class="search-modal-back-dray"></div>
+  </div>
+  <!-- end search modal -->
+
+  <!-- start shopping cart modal -->
+  <div class="modal-cart">
+    <div class="modal__item">
+      <span><i class="fa fa-close close-cart"></i></span>
+
+      <div class="empty-cart">
+        <p>Your Cart Is Empty</p>
+        <img src="./assets/image/cart-icon.png" alt="cart icon" />
+      </div>
+
+      <div class="modal-cart-inner"></div>
+      <div class="modal-btn">
+        <p></p>
+        <div>
+          <div>
+            <button class="btn btn-secondry clear-all">Clear All</button>
+            <a href="buy.html" class="modal-buy-link">
+              <button class="btn btn-primary buy-btn">buy</button>
+            </a>
+          </div>
+          <p class="error"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-cart-back-dray"></div>
+  <!-- end shopping cart modal -->
+
+
+   <!-- start shopping cart modal -->
+   <div class="modal-cart">
+    <div class="modal__item">
+      <span><i class="fa fa-close close-cart"></i></span>
+
+      <div class="empty-cart">
+        <p>Your Cart Is Empty</p>
+        <img src="./assets/image/cart-icon.png" alt="cart icon" />
+      </div>
+
+      <div class="modal-cart-inner"></div>
+      <div class="modal-btn">
+        <p></p>
+        <div>
+          <div>
+            <button class="btn btn-secondry clear-all">Clear All</button>
+            <a href="buy.html" class="modal-buy-link">
+              <button class="btn btn-primary buy-btn">buy</button>
+            </a>
+          </div>
+          <p class="error"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-cart-back-dray"></div>
+  <!-- end shopping cart modal -->
+
+  </div>
+  <!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.-->
+  
+    <div id="todo">
+    <div class="container">
+      <div class="input-field">
+        <textarea placeholder="Enter your new todo"></textarea>
+        <i class="uil uil-notes note-icon"></i>
+      </div>
+
+      <ul class="todoLists"></ul>
+
+      <div class="pending-tasks">
+        <span
+          >You have <span class="pending-num"> no </span> tasks pending.</span
+        >
+        <button class="clear-button">Clear All</button>
+      </div>
+    </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/todo.js"></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Style the icon */
+      #todo-icon {
+        background-color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+      }
+
+      #todo-icon i {
+        color: black;
+      }
+
+      #todo-icon:hover {
+        background-color: lightgray;
+      }
+
+      /* Hide the to-do list by default */
+      #todo-list {
+        display: none;
+      }
+
+      /* Add a strikethrough effect for completed items */
+      .completed {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Add a button with an icon to trigger the to-do list -->
+    <button id="todo-icon">
+      <i class="fas fa-list"></i>
+    </button>
+
+    <!-- Add a div to contain the to-do list -->
+    <div id="todo-list">
+      <h2>To-Do List</h2>
+      <ul id="todo-items">
+      </ul>
+      <form>
+        <input type="text" id="new-item" name="new-item">
+        <button type="button" id="add-button">Add</button>
+      </form>
+    </div>
+
+    <script>
+      // Add an event listener to the icon button
+      document.getElementById("todo-icon").addEventListener("click", function() {
+        // Toggle the display of the to-do list
+        var todoList = document.getElementById("todo-list");
+        if (todoList.style.display === "none") {
+          todoList.style.display = "block";
+        } else {
+          todoList.style.display = "none";
+        }
+      });
+
+      // Add an event listener to the "add" button
+      document.getElementById("add-button").addEventListener("click", function() {
+        // Get the value of the new item input
+        var newItemInput = document.getElementById("new-item");
+        var newItemValue = newItemInput.value;
+
+        // Create a new list item with a checkbox and label
+        var newListItem = document.createElement("li");
+        var newCheckbox = document.createElement("input");
+        newCheckbox.type = "checkbox";
+        newCheckbox.value = newItemValue;
+        newCheckbox.addEventListener("click", function() {
+          if (newCheckbox.checked) {
+            newLabel.classList.add("completed");
+          } else {
+            newLabel.classList.remove("completed");
+          }
+        });
+        var newLabel = document.createElement("label");
+        newLabel.appendChild(newCheckbox);
+        newLabel.appendChild(document.createTextNode(" " + newItemValue));
+        newListItem.appendChild(newLabel);
+
+        // Add the new list item to the to-do list
+        var todoItems = document.getElementById("todo-items");
+        todoItems.appendChild(newListItem);
+
+        // Clear the new item input
+        newItemInput.value = "";
+      });
+    </script>
+  </body>
+</html>
